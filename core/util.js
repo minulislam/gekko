@@ -25,11 +25,23 @@ var util = {
     if(!program.config)
         util.die('Please specify a config file.', true);
 
-    if(!fs.existsSync(util.dirs().gekko + program.config))
+ try {
+      _config = require(program.config);
+      return _config;
+    }
+    catch (e) {
+      if (e && e.code === 'MODULE_NOT_FOUND') {
+        _config = require(util.dirs().gekko + program.config);
+        return _config;
+      }
+      else
+        util.die('Cannot find the specified config file.', true);
+    }
+/*    if(!fs.existsSync(util.dirs().gekko + program.config))
       util.die('Cannot find the specified config file.', true);
 
     _config = require(util.dirs().gekko + program.config);
-    return _config;
+    return _config;*/
   },
   // overwrite the whole config
   setConfig: function(config) {

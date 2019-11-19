@@ -15,6 +15,7 @@
   },
   "author": "Mike van Rossum <mike@mvr.me>",
   "dependencies": {
+    "@slack/client": "^5.0.2",
     "async": "2.1.2",
     "bitfinex-api-node": "^1.2.1",
     "co-fs": "^1.2.0",
@@ -29,6 +30,7 @@
     "koa-static": "^2.0.0",
     "lodash": "2.x",
     "moment": "^2.20.1",
+    "node-telegram-bot-api": "^0.40.0",
     "opn": "^4.0.2",
     "promisify-node": "^0.5.0",
     "prompt-lite": "0.1.1",
@@ -39,6 +41,7 @@
     "stats-lite": "^2.0.4",
     "tiny-promisify": "^0.1.1",
     "toml": "^2.3.0",
+    "tulind": "^0.8.18",
     "ws": "^6.0.0"
   },
   "devDependencies": {

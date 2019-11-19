@@ -17,8 +17,8 @@ config.watch = {
 
   // see https://gekko.wizb.it/docs/introduction/supported_exchanges.html
   exchange: 'binance',
-  currency: 'USDT',
-  asset: 'BTC',
+  currency: 'BTC',
+  asset: 'ETH',
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

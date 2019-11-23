@@ -34,10 +34,10 @@ config.tradingAdvisor = {
 
 // MACD settings:
 config.MACD = {
-  // EMA weight (α)
+  // EMA wight (α)
   // the higher the weight, the more smooth (and delayed) the line
-  short: 10,
-  long: 21,
+  short: 12,
+  long: 26,
   signal: 9,
   // the difference between the EMAs (to act as triggers)
   thresholds: {
@@ -360,7 +360,7 @@ config.importer = {
   daterange: {
     // NOTE: these dates are in UTC
     from: "2017-11-01 00:00:00",
-    to: "2017-11-20 00:00:00"
+    //to: "2017-11-20 00:00:00"
   }
 }
 

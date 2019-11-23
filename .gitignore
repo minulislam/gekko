@@ -49,4 +49,5 @@ config-*.js
 private-*.js
 private-*.toml
 SECRET-api-keys.json
+sftp-*.json
 exchange/nusadua

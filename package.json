@@ -11,15 +11,18 @@
   ],
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*.js --recursive test -u tdd --reporter spec",
-    "start": "node ./gekko --config config.js"
+    "start": "node ./gekko --config config.js --ui"
   },
   "author": "Mike van Rossum <mike@mvr.me>",
   "dependencies": {
     "@slack/client": "^5.0.2",
     "async": "2.1.2",
     "bitfinex-api-node": "^1.2.1",
+    "cluster": "0.7.7",
     "co-fs": "^1.2.0",
     "commander": "^2.13.0",
+    "convnetjs": "^0.3.0",
+    "gauss": "0.2.12",
     "gekko": "0.0.9",
     "humanize-duration": "^3.10.0",
     "koa": "^1.2.0",
@@ -29,8 +32,11 @@
     "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
     "lodash": "2.x",
+    "lodash.ismatch": "4.4.0",
+    "mathjs": "5.1.2",
     "moment": "^2.20.1",
     "node-telegram-bot-api": "^0.40.0",
+    "numbro": "2.1.0",
     "opn": "^4.0.2",
     "promisify-node": "^0.5.0",
     "prompt-lite": "0.1.1",
@@ -42,7 +48,8 @@
     "tiny-promisify": "^0.1.1",
     "toml": "^2.3.0",
     "tulind": "^0.8.18",
-    "ws": "^6.0.0"
+    "ws": "^6.0.0",
+    "zero-fill": "2.2.3"
   },
   "devDependencies": {
     "chai": "^4.1.2",

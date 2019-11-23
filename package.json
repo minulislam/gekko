@@ -11,7 +11,9 @@
   ],
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*.js --recursive test -u tdd --reporter spec",
-    "start": "node ./gekko --config config.js --ui"
+    "start": "node ./gekko --config config.js --ui",
+    "polonix": "node ./gekko --config config-polonix.js",
+    "binance": "node ./gekko --config config-binance.js"
   },
   "author": "Mike van Rossum <mike@mvr.me>",
   "dependencies": {

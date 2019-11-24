@@ -51,3 +51,5 @@ private-*.toml
 SECRET-api-keys.json
 sftp-*.json
 exchange/nusadua
+BearMarket.js
+BearMarket.*
